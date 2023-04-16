@@ -4,25 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="stylesheet1.css">
+    <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+        <link rel="stylesheet" href="/static/stylesheet1.css">
     <title>PTO Requests</title>
 </head>
 
   <body>
         <!--Header with PTO Portal Logo-->
         <header class ="logoHead">
-            <img class = "logo" src = "images/ptoPortalLogo.png">
+            <img class = "logo" src = "/static/images/ptoPortalLogo.png">
         </header>
         <!--Menu Bar-->
-        <ul>
-            <li><a href="managerPage.html" class = "menu">Manager Home</a></li>
-            <li><a href="ptoRequest.html" class = "menu">PTO Requests</a></li>
-            <li><a href="employeeContact.html" class = "menu">Employee Contact</a></li>
-            <li><a href="departmentRecords.html" class = "menu">Department Records</a></li>
-            <li><a href="employeeRecords.html" class = "menu">Employee Records</a></li>
-        </ul>
+        <ul class = "menu">
+            <li class = "menu"><a href="managerPage.html" class = "menu"> Manager Home </a></li>
+            <li class = "menu"><a href="ptoRequest.html" class = "menu"> PTO Requests </a></li>
+            <li class = "menu"><a href="employeeContact.html" class = "menu"> Employee Contact </a></li>
+            <li class = "menu"><a href="departmentRecords.html" class = "menu"> Department Records </a></li>
+            <li class = "menu"><a href="employeeRecords.html" class = "menu"> Employee Disciplinary Records </a></li>
+          </ul>
         <h1><br>Employee Contact</h1>
+            <h3>Managers, enter your department ID to show all employee names from your department and their contact information: </h3>
+        <div class = "center">
+            <h3>Employee Contact By Department Search</h3>
+            <!-- the form below needs predefined functions so once we get those, we can insert the function into onclick = " " in the 'submit' inputs, currently not in the tag.
+                    Leaving this commented out for now. We might need some PHP or the pythonAlchemy version of it for this portion
+                    -->
+                    <!--Need to add function call below 'onclick function() to submit button' action = " " will be where the info is sent-->
+                <form action = "." method  = "POST">
+                    <label for = "department_id">Department ID:</label><br>
+                    <input type = "text" id = "department_id" name = "department_id"><br>
+                    <input type = "submit" value = "Submit">
+                </form>
+        </div>    
   </body>
 
 </html>

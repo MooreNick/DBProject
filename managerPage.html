@@ -4,25 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="stylesheet1.css">
+    <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+        <link rel="stylesheet" href="/static/stylesheet1.css">
     <title>Manager Page</title>
 </head>
 
   <body>
         <!--Header with PTO Portal Logo-->
         <header class ="logoHead">
-            <img class = "logo" src = "images/ptoPortalLogo.png">
+            <img class = "logo" src = "/static/images/ptoPortalLogo.png">
         </header>
         <!--Menu Bar-->
-        <ul>
-          <li><a href="managerPage.html" class = "menu">Manager Home</a></li>
-          <li><a href="ptoRequest.html" class = "menu">PTO Requests</a></li>
-          <li><a href="employeeContact.html" class = "menu">Employee Contact</a></li>
-          <li><a href="departmentRecords.html" class = "menu">Department Records</a></li>
-          <li><a href="employeeRecords.html" class = "menu">Employee Records</a></li>
+        <ul class = "menu">
+          <li class = "menu"><a href="managerPage.html" class = "menu"> Manager Home </a></li>
+          <li class = "menu"><a href="ptoRequest.html" class = "menu"> PTO Requests </a></li>
+          <li class = "menu"><a href="employeeContact.html" class = "menu"> Employee Contact </a></li>
+          <li class = "menu"><a href="departmentRecords.html" class = "menu"> Department Records </a></li>
+          <li class = "menu"><a href="employeeRecords.html" class = "menu"> Employee Disciplinary Records </a></li>
         </ul>
-        <h1><br>Manager Home Page</h1>
+        <div class = "center">
+          <h1><br>Manager Home Page</h1>
+            <h2>Page Features</h2>
+        </div>
+          <br>
+          <br>
+          <br>
+          <div class = "center">
+              <ul>
+                <li>PTO Requests Page is where you can view employee requests for time off.</li>
+                <li>Employee Contact Page is for searching employee contact information.</li>
+                <li>Department Records Page allows managers to search for all employees within their departments.</li>
+              </ul>
+          </div>
   </body>
 
 </html>
