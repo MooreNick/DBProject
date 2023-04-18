@@ -3,39 +3,56 @@ body,html{
     overflow: hidden;
     background-image: url(images/slanted-gradient.svg);
     background-size: cover;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .center{
-    display: block;
+    text-align:center;
     margin-left: auto;
     margin-right: auto;
-    width: 20%;
-    background-color: black;
-    color:rgb(11, 192, 192)
+    width: 50%;
+    color:black;
+}
+
+.center.logo{
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    color:black;
 }
 
 .logoHead {
     float: left;
     background-color: black;
-    display: inline-block;
   }
 
-.containerHome{
-    height: 20px;
-    width: 50%;
-    margin-top: 30px;
-    border: 30px;
-    border-color: black;
-    border-radius: 10 px;
-    margin-right: auto;
-    margin-left: auto;
+  .button-container {
+    width: 150px;
+  }
+  
+  .button {
+    width: 100%;
+    display: block;
+    color: rgb(3, 160, 160);
+    background-color: black;
+    height: 60px;
+    font-size: 15px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font: 200;
+  }
 
-}
+.vertical-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 
-ul {
+ul.menu {
     list-style-type: none;
     margin: 0;
     padding: 200;
@@ -45,23 +62,29 @@ ul {
     top: 0;
     width: 100%;
 }
-
 li{
+    text-align: center;
+    list-style-type: none;
+}
+li.menu{
+    margin-right: 10px;
     float: left;
-    border-right: 1px solid black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+li:last-child{
+    border-right: none;
 }
 
 .menu{
     display: block;
     color: azure;
-    text-align: center;
+    text-align: left;
     padding: 14px 16 px;
     text-decoration: none;
 }
 
-li a:hover{
-    background-color: black;
+li a:hover:not(.active){
+    background-color:rgb(11, 192, 192);
 }
 
 .active{
